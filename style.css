@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header styling */
+
+.header_left img {
+  height: 80px;
+  margin-left: 5px;
+  object-fit: contain;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+}
+.header_left {
+  display: flex;
+  align-items: center;
+}
+.header_left span {
+  padding: 10px;
+  cursor: pointer;
+}
+.header_middle {
+  display: flex;
+  flex: 0.7;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+}
+.material-icons {
+  color: gray;
+}
+
+.header_middle input {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-size: medium;
+  background-color: transparent;
+}
+.header_right button {
+  display: flex;
+  justify-content: center;!important
+  padding-right: 20px;
+}
+.header_right span {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* sidebar styling */
+
+.sidebar {
+  flex: 0.3;
+  max-width: 300px;
+  padding-right: 20px;
+}
+.sidebar_compose {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: gray;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0px 2px 5px -2px rgb(0, 0, 0, 0.75);
+}
+.sidebar_compose span {
+  margin-right: 5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: wh;
+  min-width: 294px;
+  height: 290px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Change color of dropdown links on hover */
+.sidebar_options:hover {
+  background-color: #d19797;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: whitesmoke;
+}
+
+.sidebar_options {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: gray;
+  cursor: pointer;
+}
+.sidebar_options .material-icons {
+  padding: 5px;
+}
+.sidebar_options h3 {
+  font-weight: 400;
+  margin-left: 10px;
+  flex: 1;
+  font-size: 16px;
+}
+
+.sidebar_options:hover,
+.sidebar_options:hover .material-icons,
+.sidebar_options:hover h3,
+.sidebar_options_active,
+.sidebar_options_active h3,
+.sidebar_options_active .material-icons {
+  background-color: #fcecec;
+  color: #c04b37;
+  font-weight: 800;
+}
+.sidebar_footer {
+  margin-top: 110%;
+  display: flex;
+  padding-left: 30%;
+}
+.sidebar_footerIcons.material-icons {
+  margin: 7px;
+  cursor: pointer;
+}
+
+/* mainbody styling.. */
+.mainbody {
+  display: flex;
+  height: 100vh;
+}
+
+/* Email list styling */
+
+.emaillist {
+  flex: 1;
+  z-index: 1;
+  overflow: scroll;
+}
+.Emaillist_settings {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  padding: 8px;
+  z-index: 999;
+}
+.Emaillist_settingsLeft {
+  display: flex;
+  align-items: center;
+}
+.Emaillist_settings .material-icons {
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* section styling */
+.section {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  border-bottom-width: 2px;
+  min-width: 200px;
+  cursor: pointer;
+  color: gray;
+  border-width: 0;
+}
+.Emailist_section {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+  z-index: 999;
+}
+.section_selected {
+  background-color: whitesmoke;
+  border-width: 3px;
+  color: red;
+  border-bottom: 3px solid red;
+}
+.section_selected .material-icons {
+  color: red;
+}
+.section:hover {
+  background-color: whitesmoke;
+  border-width: 3px;
+}
+
+.section h4 {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+/* Styling of Email list */
+.EmailRow_Options {
+  display: flex;
+  align-items: center;
+}
+.EmailRow_Option .material-icons,
+input {
+  margin: 5px;
+}
+.Emailrow {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid whitesmoke;
+  cursor: pointer;
+  z-index: 999;
+}
+.Emailrow :hover {
+  border-top: 1px solid whitesmoke;
+  box-shadow: 0 4px 4px -2px rgb(0, 0, 0, 0.24);
+}
+.EmailRow_message {
+  display: flex;
+  flex: 0.8;
+  align-items: center;
+  font-size: 13px;
+}
+
+.EmailRow_message h4 {
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.EmailRow_title {
+  font-size: 13px;
+  flex: 0.3;
+}
+.EmailRow_time {
+  font-size: 12px;
+  padding-right: 15px;
+  font-weight: bold;
+}
+.EmailRow_Description {
+  font-weight: 400;
+  color: gray;
+}
+
+/* popup styling */
+.open-button {
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  right: 20px;
+  background-color:white;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  margin-top: 13px;
+  right: 10px;
+  border: 3px solid #f1f1f1;
+  z-index: 11;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 320px;
+  padding: 15px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container img {
+  width: 23%;
+  height: 23%;
+  margin-left: 95px;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container h3 {
+  margin-left: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 100;
+  color: black;
+}
+
+.form-container .btn {
+  background-color: transparent;
+  color: black;
+  padding: 2px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 4%;
+  margin-bottom: 13px;
+  opacity: 0.8;
+  border-radius: 24px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .btncancel {
+  background-color: transparent;
+  color: black;
+  padding: 9px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 40%;
+  margin-left: 75px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  border-radius: 4px;
+  
+}
+.btncancel a{
+text-decoration: none;
+color: black;
+font-size: medium;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+.addperson {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 19px;
+  margin-left: 9%;
+}
+.addperson h4 {
+  font-weight: 200;
+  margin-left: 20px;
+  flex: 1;
+  font-size: 14px;
+}
+.footer h5 {
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+  display: inline;
+  margin-bottom: 5%;
+  padding-left: 23px;
+}

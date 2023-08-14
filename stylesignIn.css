@@ -1,0 +1,123 @@
+#logo{
+    border:1px solid #dadcdf;
+    width:500px;
+    margin-left: 440px;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+img{
+    width:120px;
+    height:40px;
+    margin-left: 190px;
+}
+#p1{
+    margin-left: 205px;
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+#p2{
+    margin-left: 150px;
+    font-size: 20px;
+    margin-top: 0px;
+
+}
+input[type=text] {
+    width:370px;
+    padding:16px;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 8px;  
+    border:1px solid #dadcdf;
+    margin-bottom:10px;
+}
+#a1{
+    font-size: 19px;
+    margin-left: 50px;
+    text-decoration: none;
+    color:#1a73e8;
+    font-weight: bold;
+     
+}
+#p3{
+    margin-left: 50px;
+    font-size: 18px;
+    margin-top: 57px;
+    opacity:0.8;
+    margin-bottom: 0px;
+
+}
+#a2{
+    font-size: 19px;
+    margin-left: 50px;
+    text-decoration: none;
+    color:#1a73e8;
+    font-weight: bold;
+     
+}
+#a3{
+    font-size: 19px;
+    margin-left: 50px;
+    text-decoration: none;
+    color:#1a73e8;
+    font-weight: bold;
+     
+}
+button{
+    margin-left: 200px;
+    color: white;
+   background-color:#1a73e8;
+   font-weight: bold;
+   font-size: 13px;
+   width: 90px;
+   border:1px solid #1a73e8;
+   padding:10px;
+   border-radius: 8px;
+
+     
+}
+
+button:hover {
+    background :#4675bb;
+    opacity:0.8;
+}
+
+#base2 {
+margin-left: 400px;
+
+}
+label{
+    opacity:0.9;
+    font-size: 17px;
+    color: black;
+}
+select{
+    border:1px solid whitesmoke;
+
+}
+ul{
+    list-style-type: none;
+    margin-top: 40px;
+
+}
+li{
+    float: left;
+
+
+}
+#help {
+    margin-left: 125px;
+}
+#Privacy {
+    margin-left: 30px;
+}
+#Terms {
+    margin-left: 30px;
+}
+#a4{
+    text-decoration: none;
+    color:#5c5959;
+    font-size: 16px;
+}

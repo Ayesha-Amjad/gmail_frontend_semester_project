@@ -1,0 +1,143 @@
+#base1{
+    border:1px solid #dadcdf;
+    width:500px;
+    height:70vh;
+    margin-left: 470px;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#base1 img {
+    width:118px;
+    height:38px;
+    margin-left: 190px;
+    margin-top: 20px;
+}
+
+
+#p2{
+    margin-left: 170px;
+    font-size: 20px;
+    margin-top: 9px;
+
+}
+.dummyemail{
+    margin-left: 12px;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-top: 6%;
+   
+}
+
+
+.dummyemail_span {
+    display: inline flex;
+    color: rgb(29, 24, 24);
+    cursor: pointer;
+  }
+  .dummyemail_span .material-icons {
+    padding: 6px 18px;
+    margin-left: 40px;
+  }
+  .dummyemail:hover{
+    background-color: lightblue;
+  }
+
+  .dummyemail_span h3 {
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 4%;
+  }
+  .dummyemail p {
+    font-weight: 100;
+    font-size: 14px;
+    color: gray;
+    margin-top: 0%;
+    cursor: pointer;
+    margin-left: 106px;
+
+  }
+.dummychoose_account{
+    margin-left: 9px;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-top: 4%;
+   
+}
+.choose_account{
+    display: inline flex;
+    color: rgb(29, 24, 24);
+    cursor: pointer;
+}
+.choose_account .material-icons {
+    padding: 6px 18px;
+    margin-left: 40px;
+  }
+  .dummychoose_account:hover{
+    background-color: lightblue;
+  }
+
+  .choose_account h3 {
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 4%;
+  }
+
+ /* button styling */
+ #base1 button{
+    margin-left: 105px;
+    color:#1a73e8;
+    font-weight: bold;
+   font-size: 14px;
+   width: 60px;
+   border:1px solid transparent;
+   padding:10px;
+   border-radius: 8px;
+   margin-top: 14%;
+ }
+ button:hover {
+    background :#99b0d3;
+    opacity:0.8;
+}
+
+
+  #base2 {
+    margin-left: 430px;
+    margin-top: 2%;
+    
+    }
+    label{
+        opacity:0.9;
+        font-size: 17px;
+    }
+    select{
+        border:1px solid whitesmoke;
+    
+    }
+    ul{
+        list-style-type: none;
+        margin-top: 40px;
+    
+    }
+    li{
+        float: left;
+    
+    
+    }
+    #help {
+        margin-left: 125px;
+    }
+    #Privacy {
+        margin-left: 30px;
+    }
+    #Terms {
+        margin-left: 30px;
+    }
+    #a4{
+        text-decoration: none;
+        color:#5c5959;
+        font-size: 16px;
+    }

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link  rel=" stylesheet" href="style.css">
+    <title>UI Gmail</title>
+
+</head>
+<body>
+    <!-- Header Start part -->
+<div class="header">
+    <div class="header_left">
+    <span class="material-icons"> menu </span>
+    <img src="newgmaillogo.jpg"  alt = Gmaillogo>
+</div>
+    <div class="header_middle">
+        <span class="material-icons"> search  </span>
+       <input type="text" placeholder="Search Email" >
+       <span class="material-icons">  arrow_drop_down </span>
+    </div>
+    <div class="header_right">
+        <span class="material-icons">  help_outline  </span>  
+        <span class="material-icons"> settings </span>
+        <span class="material-icons">  apps </span> 
+        <span class="material-icons"><button class="open-button" onclick="openForm()"><span class="material-icons">  account_circle </span></button>
+</span>
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <img src=" https://tse4.mm.bing.net/th?id=OIP.nTK-yAWL01laY6CKjMEq3gHaHa&pid=Api&P=0&w=163&h=163" alt="profile photo">
+              <h3> Dummy Email </h3>
+              <h3> dummyemail@gmail.com</h3>
+          
+              <button class="btn"><h2 style="font-size: 12px;font-weight: 100;">Manage your Google Account </h2></button> 
+             
+               <div class="addperson">
+               <span class="material-icons">person_add </span>
+              <h4> Add Another Account</h4> 
+              
+             </div> 
+          
+             <a href="choose_account.html">
+                <button class="btncancel"><a href="./choose_account.html"> Sign out</a></button>
+              </a>
+          
+             <div class="footer">
+              <h5>Privacy Policy</h5> <h5>Terms of Service</h5> 
+             </div> 
+            </form>
+          </div>
+          
+          <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          </script>  
+    </div>
+
+</div>
+
+
+     <!-- Header End part -->
+
+     <!-- Main body start  -->
+     <div class="mainbody">
+    <!-- side bar starts -->
+<div class="sidebar">
+    <button class="sidebar_compose">
+        <span class="material-icons">add</span>  Compose
+    </button>
+    <div class="sidebar_options sidebar_options_active">
+        <span class="material-icons">  inbox </span>
+        <h3> Inbox </h3>
+        </div>
+        <div class="sidebar_options"> 
+        <span class="material-icons">  star  </span>
+        <h3> Starred </h3>
+       </div>
+        <div class="sidebar_options"> 
+        <span class="material-icons">  access_time  </span>
+        <h3> Snoozed </h3>
+       </div>
+        <div class="sidebar_options"> 
+        <span class="material-icons">  near_me</span>
+        <h3> Sent </h3>
+       </div>
+        <div class="sidebar_options"> 
+        <span class="material-icons">  note </span> 
+        <h3> Draft </h3>
+       </div>
+        <div class="sidebar_options"> 
+        <span class="material-icons">label_important</span>
+        <h3> Important </h3>
+    </div>
+
+  <div class="dropdown">
+        <div class="sidebar_options"><span class="material-icons">expand_more</span> <h3>More </h3>  
+ </div>
+          <div class="dropdown-content">
+            <div class="sidebar_options"><span class="material-icons">chat </span><h3> Chats </h3></div>
+            <div class="sidebar_options"><span class="material-icons">label </span><h3> Important-mail</h3> </div>
+            <div class="sidebar_options"><span class="material-icons"> schedule_send</span> <h3> Scheduled </h3> </div>
+           <div class="sidebar_options"><span class="material-icons"> drafts  </span> <h3> Drafts </h3> </div>
+            <div class="sidebar_options"><span class="material-icons"> mail </span> <h3> All mails </h3> </div>
+             <div class="sidebar_options"><span class="material-icons"> delete </span><h3> Trash </h3>
+             </div>
+
+          </div>
+        
+        </div>
+
+
+
+   <div class="sidebar_footer">
+    <div class="sidebar_footerIcons">
+        <span class="material-icons">person</span>
+        <span class="material-icons">duo</span>
+        <span class="material-icons">phone</span>
+</div>
+</div>
+</div>
+    <!-- side bar Ends -->
+
+
+<!-- Email list start -->
+<div class="emaillist">
+<!-- setting starts  -->
+<div class="Emaillist_settings">
+ <div class="Emaillist_settingsLeft">
+<input type="Checkbox">
+<span class="material-icons"> arrow_drop_down </span>
+<span class="material-icons">redo</span>
+<span class="material-icons">more_vert  </span>
+ </div>
+ <div class="Emaillist_settingsRight">
+    <span class="material-icons">chevron_left</span>
+    <span class="material-icons">chevron_right</span>
+    <span class="material-icons"> keyboard_hide  </span>
+    <span class="material-icons">settings </span>
+ </div>
+
+</div>
+
+<!-- setting Ends  -->
+
+<!-- section start -->
+<div class="Emailist_section">
+    <div class="section section_selected">
+        <span class="material-icons ">  inbox </span>
+        <h4> Primary</h4>
+    </div>
+    <div class="section">
+        <span class="material-icons">  people </span>
+        <h4> Social</h4>
+    </div>
+    <div class="section">
+
+        <span class="material-icons">local_offer </span>
+    <h4> Promtions</h4>
+    </div>
+</div>
+<!-- section Ends -->
+<!-- Email list Row start -->
+<div class="Emaillst_list">
+    <!-- Email Row starts -->
+    <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> Udemy Instructor </h3>
+        <div class="EmailRow_message">
+            <h4> Register Udemy Instructor!<span class="EmailRow_Description">  Welcome to our cahnnel,subscribe our channel in order to get upadates</span></h4>
+        </div>
+        <p class="EmailRow_time"> 10:00PM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> LinkedIn Registration  </h3>
+        <div class="EmailRow_message">
+            <h4>   confirming your email address will give you full access to LinkedIn <span class="EmailRow_Description"> Your privacy is important.We may send you member updates, recruiter messages, job suggestions, invitations, reminders and promotional messages from us and our partners. You can change your preferences anytime.</span></h4>
+        </div>
+        <p class="EmailRow_time"> 9:55AM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> Youtube  </h3>
+        <div class="EmailRow_message">
+            <h4> You got a new Suscrsiber!<span class="EmailRow_Description"> Visit our channel for more updates</span></h4>
+        </div>
+        <p class="EmailRow_time"> 5:00PM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title">  Font Awesome   </h3>
+        <div class="EmailRow_message">
+            <h4> You're so close to using your first Font Awesome Kit!<span class="EmailRow_Description">  We just need you to confirm your email address and finish setting up a new Font Awesome account we created just for you. You can do it super-quickly! </span></h4>
+        </div>
+        <p class="EmailRow_time"> 6:00AM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> NIH </h3>
+        <div class="EmailRow_message">
+            <h4> You are invited for an interview!<span class="EmailRow_Description"> Visit our campus in order to proceed further</span></h4>
+        </div>
+        <p class="EmailRow_time"> 10:00PM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> Foodpanda </h3>
+        <div class="EmailRow_message">
+            <h4> Jo chaho khao!<span class="EmailRow_Description"> Here is the special Ramadan deals </span></h4>
+        </div>
+        <p class="EmailRow_time"> 4:26PM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> MiniSo  </h3>
+        <div class="EmailRow_message">
+            <h4> Vsit Our store Falt 10% OFF!<span class="EmailRow_Description"> Go get check and order your favourite items and Fill the cart! Harry Up!</span></h4>
+        </div>
+        <p class="EmailRow_time"> 6:00PM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> J.Frangrances  </h3>
+        <div class="EmailRow_message">
+            <h4> Vsit Our store Falt 50% OFF!<span class="EmailRow_Description"> Go get check and order your favourite items and Fill the cart! Harry Up! </span></h4>
+        </div>
+        <p class="EmailRow_time"> 2:00PM </p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> Bonanza Satrangi </h3>
+        <div class="EmailRow_message">
+            <h4> Flat 30% OFF..New Eid Collection!<span class="EmailRow_Description"> Go get check and order your favourite items and Fill the cart! Harry Up!</span></h4>
+        </div>
+        <p class="EmailRow_time"> 1:50AM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> Sapphire Online  </h3>
+        <div class="EmailRow_message">
+            <h4> Time is Runnig Out! <span class="EmailRow_Description"> Enjoy hassle-free last minute Eid preparations with Sapphire Online. Place your orders now to get your Eid outfits delivered in time!! For local orders only.</span></h4>
+        </div>
+        <p class="EmailRow_time"> 11:00PM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> J. Junaid Jamshed  </h3>
+        <div class="EmailRow_message">
+            <h4> Flat 50% OFF!<span class="EmailRow_Description"> Experience the exceptional craftsmanship with the all new J. Eid Luxe Collection - exhibiting elaborated designs on a unique color palette. Complete your look with J. accessories & footwe</span></h4>
+        </div>
+        <p class="EmailRow_time"> 3:50PM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> BankIslami  </h3>
+        <div class="EmailRow_message">
+            <h4> BankIslami is doubling your happiness through BankIslami Home Remittance!<span class="EmailRow_Description">Dear Valued Customer,BankIslami is doubling your happiness through BankIslami Home Remittance!Receive your remittance with ease through any of BankIslami's vast network of 340 plus branches in more than 123 cities and receive instant gifts and a chance to win in our lucky draw!
+            Regards,BankIslami</span></h4>
+        </div>
+        <p class="EmailRow_time"> 3:44PM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> Outfitters   </h3>
+        <div class="EmailRow_message">
+            <h4> Oufitter Summer 22 <span class="EmailRow_Description"> Go get check and order your favourite items and Fill the cart! Harry Up! </span></h4>
+        </div>
+        <p class="EmailRow_time"> 7:00PM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> Orient </h3>
+        <div class="EmailRow_message">
+            <h4>  In stores Online 2022 Collection<span class="EmailRow_Description">  Go get check and order your favourite items and Fill the cart! Harry Up! </span></h4>
+        </div>
+        <p class="EmailRow_time"> 8:00AM</p>
+    </div>
+    <!-- Email Row Ends -->
+      <!-- Email Row starts -->
+      <div class="Emailrow">
+        <div class="EmailRow_Options">
+
+        <input type="Checkbox">
+        <span class="material-icons">star_border  </span>
+        <span class="material-icons">label_important </span>
+        </div>
+        <h3 class=" EmailRow_title"> Morbagh  </h3>
+        <div class="EmailRow_message">
+            <h4> You left an item in your cart! <span class="EmailRow_Description"> Hi, you added an item to your shopping cart and haven't completed your purchase. You can complete it now while it's still available.</span></h4>
+        </div>
+        <p class="EmailRow_time"> 4:23PM</p>
+    </div>
+    <!-- Email Row Ends -->
+</div>
+<!-- Email list Row End -->
+</div>
+<!-- Email list Ends-->
+</div>
+<!-- Main body Ends  -->
+
+</body>
+</html>
